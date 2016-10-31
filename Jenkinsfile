@@ -1,8 +1,6 @@
 node {
     echo 'Hello World'
     sh 'whoami'
-    sh('cd src && git rev-parse HEAD > GIT_COMMIT')
-    git_commit=readFile('src/GIT_COMMIT')
+    sh('ls > file && cat file')
     
-    echo git_commit
 }
