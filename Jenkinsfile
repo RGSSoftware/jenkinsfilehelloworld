@@ -5,7 +5,8 @@ node {
     //echo "${pwd()}@script"
     dir("${pwd()}@script"){
         echo pwd()
-        sh('ls')
+        sh('ls && cat Jenkinsfile')
+        
     }
     //sh('cd ../ && ls')
     
