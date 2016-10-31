@@ -2,7 +2,7 @@ node {
     echo 'Hello World'
     sh 'whoami'
     sh '''
-        ls > echo
+        ls\>\echo
         cat echo
        '''
 }
