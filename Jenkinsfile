@@ -1,6 +1,8 @@
 node {
     echo 'Hello World'
     sh 'whoami'
-    sh('cd ../ && ls')
+    //def pwd = pwd()
+    echo "${pwd()}@script"
+    //sh('cd ../ && ls')
     
 }
