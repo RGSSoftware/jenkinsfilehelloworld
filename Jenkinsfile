@@ -1,5 +1,5 @@
 node {
     echo 'Hello World'
     sh 'whoami'
-    GIT_BRANCH
+    echo GIT_BRANCH
 }
